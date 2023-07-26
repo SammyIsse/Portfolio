@@ -174,6 +174,7 @@
     #profile-pic {
       border-radius: 40%;
     }
+
   </style>
 </head>
 
@@ -191,7 +192,7 @@
                   <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="#section1">About</a>
+                  <a class="nav-link active" href="#slide1">About</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -199,9 +200,9 @@
                     Projects
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#section2">Easy</a></li>
-                    <li><a class="dropdown-item" href="#section3">Intermediate</a></li>
-                    <li><a class="dropdown-item" href="#section4">Hard</a></li>
+                    <li><a class="dropdown-item" href="#slide2">Easy</a></li>
+                    <li><a class="dropdown-item" href="#slide3">Intermediate</a></li>
+                    <li><a class="dropdown-item" href="#slide4">Hard</a></li>
                   </ul>
                 </li>
                 <li class="nav-item active">
@@ -221,7 +222,7 @@
       <div class="row justify-content-center flex-grow-1 ">
         <div class="col">
           <div class="header">
-            <img src="./images/background-shape.png" alt="" width="1400px" height="400px">
+            <img src="./images/background-shape.png" alt="" width="100%"  id="backgroundShape">
             <div class="heading-text mb-3 pt-5">
               <h1 class="header-h1">Welcome</h1>
               <p class="header-p">
@@ -244,7 +245,7 @@
   <section id="section1">
 
     <div class="section1">
-      <div class="px-4  text-center">
+      <div class="px-4 py-5 my-5 text-center" id="slide1">
         <img class="d-block mx-auto mb-4" id="profile-pic" src="./images/Profilbillede.jpg" alt="" width="200"
           height="200">
         <h1 class="display-5 fw-bold">About Me</h1>
@@ -260,9 +261,9 @@
 
   </section>
   <section id="section2">
-    <div class="container col-xxl-8 px-4 ">
+    <div class="container col-xxl-8 px-4 py-5" >
       <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-10 col-sm-8 col-lg-6">
+        <div class="col-10 col-sm-8 col-lg-6" id="slide2">
           <img src="./images/content/placeholder.1.avif" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
             width="700" height="500" loading="lazy">
         </div>
@@ -281,7 +282,7 @@
   </section>
 
   <section id="section3">
-    <div class="container col-xxl-8 px-4 ">
+    <div class="container col-xxl-8 px-4 py-5">
       <div class="row d-flex flex-wrap-reverse flex-lg-row-reverse align-items-center g-5 py-5">
         <div class="col-lg-6 ">
           <h1 class="display-5 fw-bold lh-1 mb-3">Responsive right-aligned hero with image</h1>
@@ -293,7 +294,7 @@
             <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
           </div>
         </div>
-        <div class="col-10 col-sm-8 col-lg-6">
+        <div class="col-10 col-sm-8 col-lg-6" id="slide3">
           <img src="./images/content/placeholder.2.avif" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
             width="700" height="500" loading="lazy">
         </div>
@@ -303,9 +304,9 @@
   </section>
 
   <section id="section4">
-    <div class="container col-xxl-8 px-4 ">
+    <div class="container col-xxl-8 px-4 py-5">
       <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-10 col-sm-8 col-lg-6">
+        <div class="col-10 col-sm-8 col-lg-6" id="slide4">
           <img src="./images/content/placeholder.3.avif" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
             width="700" height="500" loading="lazy">
         </div>
