@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
+<html lang="en" data-bs-theme="dark">
 
 <head>
   <meta charset="utf-8" />
@@ -152,26 +152,28 @@
       justify-self: center;
     }
 
-    #section1 {
+    .section1 {
       height: 100vh;
     }
 
-    #section2 {
+    .section2 {
       height: 100vh;
     }
 
-    #section3 {
+    .section3 {
       height: 100vh;
     }
 
-    #section4 {
+    .section4 {
       height: 100vh;
     }
 
-    #profile-pic{
+
+
+
+    #profile-pic {
       border-radius: 40%;
     }
-
   </style>
 </head>
 
@@ -179,32 +181,43 @@
   <header>
     <div class="container-fluid wrapper d-flex flex-column">
 
-      <nav class="navbar navbar-dark bg-transparent">
-        <div class="container-fluid" style="width: 100%">
-          <a class="navbar-brand" href="#">My Portfolio</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="true" href="#section1">About Me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#section2">Easy Project</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#section3">Medium Project</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#section4">Hard Project</a>
-              </li>
-            </ul>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent ">
+        <div class="container-fluid" id="wholeNavbar">
+          <a class="navbar-brand" href="#">Sammy Isse</a>
+          <div class="d-flex justify-content-end">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#section1">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Projects
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#section2">Easy</a></li>
+                    <li><a class="dropdown-item" href="#section3">Intermediate</a></li>
+                    <li><a class="dropdown-item" href="#section4">Hard</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link disabled" href="#section5" tabindex="-1" aria-disabled="true">Contact me</a>
+                </li>
+              </ul>
+            </div>
           </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
         </div>
       </nav>
+
       <div class="row justify-content-center flex-grow-1 ">
         <div class="col">
           <div class="header">
@@ -230,45 +243,37 @@
   </header>
   <section id="section1">
 
-
-          <div class="px-4 py-5 my-5 text-center">
-            <img class="d-block mx-auto mb-4" id="profile-pic" src="./images/Profilbillede.jpg" alt="" width="200" height="200">
-            <h1 class="display-5 fw-bold">About Me</h1>
-            <div class="col-lg-6 mx-auto">
-              <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the
-                world’s
-                most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system,
-                extensive prebuilt components, and powerful JavaScript plugins.</p>
-            </div>
-          </div>
+    <div class="section1">
+      <div class="px-4 py-5 my-5 text-center">
+        <img class="d-block mx-auto mb-4" id="profile-pic" src="./images/Profilbillede.jpg" alt="" width="200"
+          height="200">
+        <h1 class="display-5 fw-bold">About Me</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the
+            world’s
+            most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system,
+            extensive prebuilt components, and powerful JavaScript plugins.</p>
+        </div>
+      </div>
+    </div>
 
 
   </section>
   <section id="section2">
-    <div class="container">
+    <div class="container col-xxl-8 px-4 py-5">
       <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
         <div class="col-10 col-sm-8 col-lg-6">
-          <img
-            src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHdlYnNpdGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60"
-            class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy" />
+          <img src="./images/content/placeholder.1.avif" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
+            width="700" height="500" loading="lazy">
         </div>
         <div class="col-lg-6">
-          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
-            Responsive left-aligned hero with image
-          </h1>
-          <p class="lead">
-            Quickly design and customize responsive mobile-first sites with
-            Bootstrap, the world’s most popular front-end open source toolkit,
-            featuring Sass variables and mixins, responsive grid system,
-            extensive prebuilt components, and powerful JavaScript plugins.
-          </p>
+          <h1 class="display-5 fw-bold lh-1 mb-3">Responsive left-aligned hero with image</h1>
+          <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most
+            popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system,
+            extensive prebuilt components, and powerful JavaScript plugins.</p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
-              Primary
-            </button>
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">
-              Default
-            </button>
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
           </div>
         </div>
       </div>
@@ -276,69 +281,50 @@
   </section>
 
   <section id="section3">
-    <div class="container">
-      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-lg-6">
-          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
-            Responsive left-aligned hero with image
-          </h1>
-          <p class="lead">
-            Quickly design and customize responsive mobile-first sites with
-            Bootstrap, the world’s most popular front-end open source toolkit,
-            featuring Sass variables and mixins, responsive grid system,
-            extensive prebuilt components, and powerful JavaScript plugins.
-          </p>
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row d-flex flex-wrap-reverse flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-lg-6 ">
+          <h1 class="display-5 fw-bold lh-1 mb-3">Responsive right-aligned hero with image</h1>
+          <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most
+            popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system,
+            extensive prebuilt components, and powerful JavaScript plugins.</p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
-              Primary
-            </button>
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">
-              Default
-            </button>
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
           </div>
         </div>
         <div class="col-10 col-sm-8 col-lg-6">
-          <img
-            src="https://images.unsplash.com/photo-1573867639040-6dd25fa5f597?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHdlYnNpdGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60"
-            class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy" />
+          <img src="./images/content/placeholder.2.avif" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
+            width="700" height="500" loading="lazy">
         </div>
+
       </div>
     </div>
   </section>
 
   <section id="section4">
-    <div class="container">
+    <div class="container col-xxl-8 px-4 py-5">
       <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
         <div class="col-10 col-sm-8 col-lg-6">
-          <img
-            src="https://images.unsplash.com/photo-1426024120108-99cc76989c71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fHdlYnNpdGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60"
-            class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy" />
+          <img src="./images/content/placeholder.3.avif" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
+            width="700" height="500" loading="lazy">
         </div>
         <div class="col-lg-6">
-          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
-            Responsive left-aligned hero with image
-          </h1>
-          <p class="lead">
-            Quickly design and customize responsive mobile-first sites with
-            Bootstrap, the world’s most popular front-end open source toolkit,
-            featuring Sass variables and mixins, responsive grid system,
-            extensive prebuilt components, and powerful JavaScript plugins.
-          </p>
+          <h1 class="display-5 fw-bold lh-1 mb-3">Responsive left-aligned hero with image</h1>
+          <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most
+            popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system,
+            extensive prebuilt components, and powerful JavaScript plugins.</p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
-              Primary
-            </button>
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">
-              Default
-            </button>
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
           </div>
         </div>
       </div>
     </div>
   </section>
-<section id="section5">
-  
-</section>
+  <section id="section5">
+
+  </section>
   <footer>
     <div class="container-fluid footer">
       <footer class="py-3 mt-4 text-white">
