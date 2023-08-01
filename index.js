@@ -1,3 +1,17 @@
+
+$( document ).ready(function() {
+
+  for(var i = 1; i <=4; i++){
+
+    var element = "#slide" +i;
+
+    $(element).css("opacity", 2);
+
+  }
+});
+
+
+
 particlesJS("particles-js", {
     "particles": {
       "number": {
@@ -112,4 +126,20 @@ particlesJS("particles-js", {
 
 $(".navbar-nav>li>a.hop, .navbar-nav>li>ul>li>a.hop").on("click", function(){
     $(".navbar-collapse").collapse("hide");
+});
+
+$(window).scroll(function() {
+  for(var i = 0; i <=4; i++){
+    var element = "#slide" + i;
+  var top_of_element = $(element).offset().top;
+  var bottom_of_element = $(element).offset().top + $(element).outerHeight();
+  var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+  var top_of_screen = $(window).scrollTop();
+
+  if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
+          $(element).fadeIn(2000);
+  } else {
+      // the element is not visible, do something else
+  }
+}
 });
